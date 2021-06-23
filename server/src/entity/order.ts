@@ -1,5 +1,4 @@
 import {Entity, Column, PrimaryColumn} from "typeorm";
-import {IPerson, vaccineNames } from "../interfaces/interfaces";
 
 @Entity()
 export class Order {
@@ -14,7 +13,7 @@ export class Order {
     orderNumber!: number;
 
     @Column()
-    responsiblePerson!: IPerson;
+    responsiblePerson!: string;
 
     @Column()
     injections!: number;
@@ -23,7 +22,7 @@ export class Order {
     arrived!: string;
 
     @Column()
-    vaccine!: vaccineNames;
+    vaccine!: string;
 
 }
 

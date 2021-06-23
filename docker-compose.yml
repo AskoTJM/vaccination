@@ -21,5 +21,4 @@ services:
             - "5433:5432"
     environment:
             POSTGRES_PASSWORD: ${DBPASSWORD} 
-    volumes:
-            - ./database-data:/var/lib/postgresql/data
+            POSGRES_USER: ${DBUSER}

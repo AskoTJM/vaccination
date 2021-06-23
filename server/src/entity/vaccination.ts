@@ -1,20 +1,18 @@
 import {Entity, Column, PrimaryColumn} from "typeorm";
-import { genderTypes, IOrder} from "../interfaces/interfaces";
-
 
 @Entity()
-export class Vaccine {
+export class Vaccination {
     
     @PrimaryColumn()
     vaccinationId!: string;
 
     @Column()
-    gender!: genderTypes;
+    gender!: string;
 
     @Column()
-    sourceBottle!: IOrder;
+    sourceBottle!: string;
 
     @Column()
-        injected: string | undefined;
+    injected!: string;
 
 }

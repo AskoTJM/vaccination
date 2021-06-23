@@ -2,8 +2,8 @@
 	"type": "postgres",
 	"host": "db",
 	"port": 5432,
-	"username": "postgresql",
+	"username": "postgres",
 	"password": "2306VaccinesDB",
-	"database": "postgresql",
+	"database": "postgres",
 	"entities": ["src/entity/*.ts"]
 }
