@@ -1,0 +1,6 @@
+{
+  "short_name": "Vaccine Client",
+  "name": "Client for Solita Vaccine Exercise 2021",
+  "start_url": ".",
+  "display": "standalone",
+}

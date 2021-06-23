@@ -1,0 +1,52 @@
+#VSCode Ignores
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+.history/
+# Docker Ignores
+.env
+
+# VIM Ignores
+*~
+*.swo
+*.swp
+
+# NodeJS Ignores
+node_modules
+
+# Server Ignores
+server/.eslintignore
+server/.eslintrc
+server/.dockerignore
+server/node_modules
+server/.env
+
+# Client Ignores
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+client/node_modules
+
+# dependencies
+client/.pnp
+client/.pnp.js
+
+# testing
+client/coverage
+
+# production
+client/build
+
+# misc
+client/.DS_Store
+client/.env.local
+client/.env.development.local
+client/.env.test.local
+client/.env.production.local
+
+client/npm-debug.log*
+client/yarn-debug.log*
+client/yarn-error.log*
