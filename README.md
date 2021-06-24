@@ -7,7 +7,8 @@
 
 ### Docker   
     - Containers for Frontend, backend and database
-    - docker-compose to create network for them    
+    - docker-compose to create network for them
+    - against common sense .env file with password and user is NOT gitignored to make testing easier for other people.    
   
 ### Frontend:  
     - React / Typescript  
@@ -17,6 +18,6 @@
 ### Backend:  
     - NodeJS / Typescript  
     - Express  
-    - n-readlines , for reading source files line by line because JSON.parse() errors.
+    - n-readlines , for reading source files line by line because JSON.parse() errors without it.
 ### Database:  
-    - PostgreSQL   
+    - PostgreSQL , currently no data persistance as using Docker's Volume caused ownership issues with folders. So there is script to populate database from source files.   

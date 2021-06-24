@@ -12,11 +12,10 @@ export interface IOrder {
     "vaccine": vaccineNames
 }
 
-
 export interface IVaccination {
-    "vaccination-id": string,
-    "gender": genderTypes,
-    "sourceBottle": IOrder,
+    "vaccinationId": string,
+    "gender": string,
+    "sourceBottle": string,
     "injected": string
 }
 

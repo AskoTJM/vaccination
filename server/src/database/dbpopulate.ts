@@ -1,9 +1,17 @@
-import readOrderSourceFileToArray from "../utils/fileUtils";
+import readOrderSourceFileToArray, { readVaccinationSourceFileToArray } from "../utils/fileUtils";
+import { orderToDB, vaccinationToDB } from "./dbconnection";
+
 
 export default function populateDatabase():void{
 
     const antiquaOrder = readOrderSourceFileToArray('Antiqua');
-    console.log(antiquaOrder);
+    orderToDB(antiquaOrder );
+    const solarBuddhicaOrder = readOrderSourceFileToArray('SolarBuddhica');
+    orderToDB(solarBuddhicaOrder );
+    const zerpfyOrder = readOrderSourceFileToArray('Zerpfy');
+    orderToDB(zerpfyOrder );
+    const vaccinations = readVaccinationSourceFileToArray('vaccinations');
+    vaccinationToDB(vaccinations);
     //console.log(readOrderSourceFileToArray('SolarBuddhica'));
     //console.log(readOrderSourceFileToArray('Zerpfy'));
 
