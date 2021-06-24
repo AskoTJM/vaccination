@@ -8,7 +8,7 @@
 
 .history/
 # Docker Ignores
-#.env
+.env
 docker-compose.yml_bck
 
 # VIM Ignores
