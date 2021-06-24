@@ -6,7 +6,7 @@ import { IOrder, IVaccination } from "../interfaces/interfaces";
 import populateDatabase from "./dbpopulate";
 
 export default function connectToDB(): void{
-    createConnection().then(async connection =>{
+    createConnection().then(async () =>{
         console.log("Connected to database.");
         populateDatabase();
         }).catch(error => {

@@ -4,7 +4,7 @@ import {Entity, Column, PrimaryColumn} from "typeorm";
 export class Vaccination {
     
     @PrimaryColumn()
-    vaccinationId!: string;
+    "vaccination-id"!: string;
 
     @Column()
     gender!: string;
@@ -13,6 +13,6 @@ export class Vaccination {
     sourceBottle!: string;
 
     @Column({ type: 'timestamptz' })
-    injected!: Date;
+    vaccinationDate!: Date;
 
 }

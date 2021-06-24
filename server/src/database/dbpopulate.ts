@@ -12,7 +12,5 @@ export default function populateDatabase():void{
     orderToDB(zerpfyOrder );
     const vaccinations = readVaccinationSourceFileToArray('vaccinations');
     vaccinationToDB(vaccinations);
-    //console.log(readOrderSourceFileToArray('SolarBuddhica'));
-    //console.log(readOrderSourceFileToArray('Zerpfy'));
 
 }

@@ -13,10 +13,10 @@ export interface IOrder {
 }
 
 export interface IVaccination {
-    "vaccinationId": string,
+    "vaccination-Id": string,
     "gender": string,
     "sourceBottle": string,
-    "injected": string
+    "vaccinationDate": string
 }
 
 
