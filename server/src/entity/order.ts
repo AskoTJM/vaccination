@@ -18,8 +18,8 @@ export class Order {
     @Column()
     injections!: number;
 
-    @Column()
-    arrived!: string;
+    @Column({type: 'timestamptz'})
+    arrived!: Date;
 
     @Column()
     vaccine!: string;

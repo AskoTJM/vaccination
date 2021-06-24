@@ -12,7 +12,7 @@ export class Vaccination {
     @Column()
     sourceBottle!: string;
 
-    @Column()
-    injected!: string;
+    @Column({ type: 'timestamptz' })
+    injected!: Date;
 
 }
