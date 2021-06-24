@@ -17,6 +17,6 @@
 ### Backend:  
     - NodeJS / Typescript  
     - Express  
-  
+    - n-readlines , for reading source files line by line because JSON.parse() errors.
 ### Database:  
     - PostgreSQL   
